@@ -3,6 +3,7 @@ qui {
 		1. Intermediate Stata
 		2. Practice session of week 1-4 content
 		3. Let's create an online module
+	
 	}
 	if 1 { //Log, Settings, Macros, Workdirectory, Data
 		cls
@@ -10,7 +11,7 @@ qui {
 		capture log close 
 		log using wk5.log, replace 
 		local output "/users/d/desktop" 
-		global url "https://raw.githubusercontent.com/yaiura1/hw1/main/hw1.do" //you all have your own URLs, this is one of your peers just for demo purposes
+		global url "https://raw.githubusercontent.com/PRASADJHSPH/hw1/main/hw1_prasad_babar.do" //you all have your own URLs, this is one of your peers just for demo purposes
 		global table1_fena "https://raw.githubusercontent.com/jhustata/basic/main/table1_fena.ado"
 		capture confirm file "`output'"
 		if _rc == 0 {
